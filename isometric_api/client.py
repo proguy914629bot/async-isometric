@@ -1,4 +1,4 @@
-import aiohttp, yarl, asyncio, pathlib
+import aiohttp, yarl, asyncio, pathlib, typing
 from io import BytesIO
 from .errors import *
 from .dataclass import *
@@ -15,7 +15,42 @@ async def raise_error(resp):
     raise IsometricError(resp, js.get('info', js))
 
 class Client:
-    def __init__(self, *, session: aiohttp.ClientSession = None, loop = None):
+    """
+    The base-client of the Isometric API.
+    
+    Parameters
+    ----------
+    session: :class:`aiohttp.ClientSession`
+        The session used for querying to API endpoints.
+        This defaults to making a brand new session.
+    loop:
+        The loop to be used. Default to a loop from
+        `asyncio.get_event_loop()`
+        
+        ..note::
+        
+            This is not used in the current version. It
+            will be used in a newer version in the future.
+            
+    Attributes
+    ----------
+    session: :class:`aiohttp.ClientSession`
+        The session used for querying to API endpoints.
+    loop:
+        The loop to be used.
+        
+        ..note::
+        
+            This is not used in the current version. It
+            will be used in a newer version in the future.
+            
+    url: :class:`str`
+        The base url to be used.
+    """
+    
+    __slots__ = ('_base_url', 'session', 'loop', 'url')
+    
+    def __init__(self, *, session: typing.Optional[aiohttp.ClientSession] = None, loop = None):
         self._base_url = yarl.URL("https://jeyy-api.herokuapp.com/")
         self.session = session or aiohttp.ClientSession()
         self.loop = loop or asyncio.get_event_loop()
