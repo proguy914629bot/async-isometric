@@ -9,7 +9,7 @@ You also need Git.
 
 To install this package, all you need to do is:
 ```sh
-pip install git+https://github.com/proguy914629bot/async-isometric
+pip install git+https://github.com/proguy914629bot/isometric-api
 ```
 
 ## Examples:
