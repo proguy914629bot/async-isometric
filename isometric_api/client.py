@@ -26,9 +26,8 @@ class Client:
     loop:
         The loop to be used. Default to a loop from
         `asyncio.get_event_loop()`
-        
+
         ..note::
-        
             This is not used in the current version. It
             will be used in a newer version in the future.
             
@@ -40,7 +39,6 @@ class Client:
         The loop to be used.
         
         ..note::
-        
             This is not used in the current version. It
             will be used in a newer version in the future.
             
