@@ -13,6 +13,7 @@
 import os
 import sys
 os.system("pip install karma_sphinx_theme")
+import karma_sphinx_theme
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('..'))
 
@@ -37,7 +38,8 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
     'sphinx.ext.napoleon',
-    # 'sphinxcontrib-asyncio'
+    # 'sphinxcontrib-asyncio',
+    'karma_sphinx_theme'
 ]
 
 napoleon_google_docstring = False
