@@ -29,7 +29,28 @@ class Client:
     def set_url(self, value):
         self._base_url = yarl.URL(str(value))
 
-    async def isometric(self, iso_code: str, *, save_to: str = None):
+    async def isometric(self, iso_code: str, *, save_to: str = None) -> IsometricData:
+        """Runs an Isometric.
+        This calls the `/isometric` endpoint to the API.
+        
+        Parameters
+        ----------
+        iso_code: :class:`str`
+            The Isometric Code.
+        save_to: :class:`str`
+            Where to save the isometric file.
+            Defaults to None (Doesn't save)
+            
+        Raises
+        ------
+        IsometricError
+            This raises when a unknown error was found.
+            
+        Returns
+        -------
+        :class:`IsometricData`
+            The Isometric data provided by the API.
+        """
         uri = str(self._base_url)
         async with self.session.get(uri, params={"iso_code": str(iso_code)}) as resp:
             if not resp.content_type.startswith("image/"):
