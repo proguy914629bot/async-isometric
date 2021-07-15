@@ -57,7 +57,7 @@ class Client:
     
     @property
     def url(self) -> str:
-    """The Base URL used for the API."""
+        """The Base URL used for the API."""
         return str(self._base_url)
     
     @url.setter
