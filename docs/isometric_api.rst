@@ -1,4 +1,4 @@
-.. currentmodule:: discord
+.. currentmodule:: isometric_api
 
 Isometric API Documentation
 ===========================
