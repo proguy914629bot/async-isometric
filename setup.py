@@ -34,7 +34,7 @@ setup(
         "Issue tracker": "https://github.com/proguy914629bot/isometric-api/issues",
     },
     packages=[
-        'isometric-api'
+        'isometric_api'
     ],
     license='MIT',
     description='A async wrapper to the Isometric API (https://jeyy-api.herokuapp.com)',
