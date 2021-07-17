@@ -1,3 +1,5 @@
+.. currentmodule:: discord
+
 Isometric API Documentation
 ===========================
 
@@ -6,7 +8,9 @@ Client
 
 Client
 ~~~~~~
-.. autoclass:: isometric_api.Client
+.. attributetable:: Client
+
+.. autoclass:: Client
     :members:
 
 Exceptions
@@ -14,7 +18,7 @@ Exceptions
 
 IsometricError
 ~~~~~~~~~~~~~~
-.. autoclass:: isometric_api.IsometricError
+.. autoexception:: IsometricError
     :members:
     
 Dataclasses
@@ -22,5 +26,7 @@ Dataclasses
 
 IsometricData
 ~~~~~~~~~~~~~
-.. autoclass:: isometric_api.IsometricData
+.. attributetable:: IsometricData
+
+.. autoclass:: IsometricData()
     :members:
