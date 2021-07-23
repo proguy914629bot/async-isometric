@@ -38,12 +38,12 @@ class Client:
     loop:
         The loop to be used.
         
-        ..note::
+        .. note::
             This is not used in the current version. It
             will be used in a newer version in the future.
             
     url: :class:`str`
-        The base url to be used.
+        The Base URL used to query endpoints.
     """
     
     __slots__ = ('_base_url', 'session', 'loop', 'url')
@@ -55,7 +55,7 @@ class Client:
     
     @property
     def url(self) -> str:
-        """The Base URL used for the API."""
+        """The Base URL used to query endpoints."""
         return str(self._base_url)
     
     @url.setter
@@ -64,7 +64,6 @@ class Client:
 
     async def isometric(self, iso_code: str, *, save_to: str = None) -> IsometricData:
         """Runs an Isometric.
-        This calls the `/isometric` endpoint to the API.
         
         Parameters
         ----------
