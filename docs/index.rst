@@ -5,13 +5,13 @@ isometric-api
 -------------
 A async wrapper around the `Isometric API`_.
 
-.. _isometric_api: https://jeyy-api.herokuapp.com
+.. _Isometric_API: https://jeyy-api.herokuapp.com
 
 Help and Support
 ================
 For help and support, feel free to contact me `in discord`_.
 
-.. _discord_uri: https://discord.com/users/699839134709317642
+.. _in_discord: https://discord.com/users/699839134709317642
 
 Information:
 ============
