@@ -8,13 +8,13 @@ Client
 ~~~~~~
 .. autoclass:: isometric_api.Client
     :members:
+    
+Isometric
+---------
 
-Exceptions
-----------
-
-IsometricError
-~~~~~~~~~~~~~~
-.. autoexception:: isometric_api.IsometricError
+Isometric
+~~~~~~~~~
+.. autoclass:: isometric.Isometric
     :members:
     
 Dataclasses
@@ -23,4 +23,12 @@ Dataclasses
 IsometricData
 ~~~~~~~~~~~~~
 .. autoclass:: isometric_api.IsometricData
+    :members:
+
+Exceptions
+----------
+
+IsometricError
+~~~~~~~~~~~~~~
+.. autoexception:: isometric_api.IsometricError
     :members:
