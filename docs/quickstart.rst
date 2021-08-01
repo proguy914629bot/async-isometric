@@ -23,4 +23,4 @@ Here are some examples!
    
 More examples can be found on `the github`_.
 
-.. github_url: https://github.com/proguy914629bot/isometric-api/tree/main/examples
+.. _the_github: https://github.com/proguy914629bot/isometric-api/tree/main/examples
