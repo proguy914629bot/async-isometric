@@ -1,3 +1,6 @@
+# WARNING:
+This is no longer maintained.
+
 A async wrapper to the Isometric API (https://jeyy-api.herokuapp.com/)
 
 # Guide:
